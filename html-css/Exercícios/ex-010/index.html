@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Link </title>
+</head>
+<body>
+   <h1>Usando link externos</h1> 
+   <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external"> repositório público no GitHub</a></p>
+   <p>Você também pode acessar o <a href="https://youtube.com/cursoemvideo" 
+    target="_blank" rel="external"> canal gratuito no Youtube</a> </p>
+   <p>Usando link internos</p>
+   Está é a primeira página do meu site, se você quiser também pode acessar a minha <a href="pag002.html" ref="next">segunda página</a> 
+   <p>Você também pode acessar a nossa <a href="Noticias/pag003.html" target="_self">página de notícias.</a></p>
+   <h1>Links para download</h1>
+   <ul>
+        <li><a href="Livro/Meu livro.pdf"  download="meu livro.pdf" type="application/pdf">Baixar livro em PDF</a></li>
+        <li><a href="Livro/Meu livro.zip" target="_blank" rel="external" download="Meu livro.zip" type="application/zip">Baixar livro compactado em ZIP</a></li>
+        <li><a href="Livro/Meu livro.pdf" target="_blank" rel="external" download="meu livro.pdf" type="application/pdf">xxxxxx</a></li>
+        <!--Para esse três casos: o primeiro <li> o google chrome está fazendo a abertura do arquivo na mesma pagina, não fazendo o download;
+        Pra o segundo <li>  o google chrome esta fazendo o download normalmente; e
+        Pra o terceiro <li> inclui o target="_blanck" rel="external", assim o google chrome abre uma nova aba com o arquivo aberto.
+        OBS: Não altera em nada caso inclua  target="_blanck" rel="external" no segundo <li>-->
+   </ul>
+</body>
+</html>

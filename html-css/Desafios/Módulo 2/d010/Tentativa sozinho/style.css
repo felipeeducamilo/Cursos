@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+nav {
+    background-image: linear-gradient(to bottom, rgb(105, 167, 105), rgb(45, 66, 45));
+    color: white;
+}
+
+nav > h1, p, a {
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav > a {
+    color: white;
+}
+
+
+body {
+    color: black;
+    background-color: rgb(138, 193, 138);
+    
+}
+
+main {
+    background-color: white;
+    padding: 5px;
+    margin: auto;
+    width: 600px;
+    text-align: justify;
+}
+
+p {
+    text-align: justify;
+}    
+
+main > article > sec {
+    color: black;
+    margin: auto;
+}
+
+#android  {
+    width: 80%;
+    margin: auto;
+    display: block;
+    padding: 0px 0px 0px 12px;
+}
+
+#irina-blok {
+    width: 100%;
+    margin: auto;
+}
+
+#bugdoid {
+    width: 30%;
+    margin: auto;
+  display: block;
+}
+
+section {
+    background-color: rgb(2, 52, 2);
+    width: 600px;
+    margin: 0px;
+    padding: 0px;
+}
+#video {
+    align-items: center;
+   
+}
