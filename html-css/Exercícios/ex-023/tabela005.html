@@ -15,15 +15,13 @@
             width: 400px;
         }
 
-        .batman {
-             background-color: #d7d9f2;
+        .weekdays {
+            background-color: #d7d9f2;
         }
 
-        .flash {
-             background-color: #ffe8d4;
+        .weekend {
+            background-color: #ffe8d4;
         }
-
-
         caption {
             padding: 10px;
             font-size: 1.3em;
@@ -35,19 +33,19 @@
             padding: 10px;
         }
 
+        .nome{
+            background-color: aqua;
+        }
+
     </style>
 </head>
 <body>
     <h1>Exercício de Tabela</h1>
     <table>
         <colgroup>
-            <col />
-             <col span="2" class="batman" />
-             <col span="2" class="flash" />   
+            <col class="nome"> 
         </colgroup>
-
         <caption>Cadastro</caption>
-       
         <table>
             <tr>
                 <th scope="col">Nome</th>
@@ -55,42 +53,36 @@
                 <th scope="col">Idade</th>
                 <th scope="col">Profissão</th>
             </tr>
-
             <tr>
                 <td>Ana Maria</td>
                 <td>F</td>
                 <td>25</td>
                 <td>Jornalista</td>
             </tr>
-
             <tr>
                 <td>Felipe Eduardo</td>
                 <td>M</td>
                 <td>40</td>
                 <td>Militar</td>
             </tr>
-
             <tr>
                 <td>Danuza Ravena</td>
                 <td>F</td>
                 <td>37</td>
                 <td>Enfermeira</td>
             </tr>
-
             <tr>
                 <td>Eduardo Camilo</td>
                 <td>F</td>
                 <td>09</td>
                 <td>Estudante</td>
             </tr>
-
             <tr>
                 <td>Rafael</td>
                 <td>M</td>
                 <td>28</td>
                 <td>Educador Físico</td>
             </tr>
-
             <tr>
                 <td>Maria Amparo</td>
                 <td>F</td>
@@ -98,6 +90,45 @@
                 <td>Aposentada</td>
             </tr>
         </table>
+        <br>
+        <table>
+            <caption>
+              Personal weekly activities
+            </caption>
+            <colgroup>
+                <col span="2" class="weekdays">> 
+            </colgroup>
+                
+            </colgroup>
+            <colgroup span="2" class="weekend"></colgroup>
+            <tr>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+              <th>Sun</th>
+            </tr>
+            <tr>
+              <td>Clean room</td>
+              <td>Football training</td>
+              <td>Dance Course</td>
+              <td>History Class</td>
+              <td>Buy drinks</td>
+              <td>Study hour</td>
+              <td>Free time</td>
+            </tr>
+            <tr>
+              <td>Yoga</td>
+              <td>Chess Club</td>
+              <td>Meet friends</td>
+              <td>Gymnastics</td>
+              <td>Birthday party</td>
+              <td>Fishing trip</td>
+              <td>Free time</td>
+            </tr>
+          </table>
     </table>
 
     
