@@ -5,3 +5,28 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+/*================ HEADER ================================*/
+
+header {
+    background-color: #405D72;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+main {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border: 20px solid black;
+    margin-left: 200px;
+}
+
+footer {
+    background-color: yellow;
+    width: 200px;;
+    height: 200px;
+    border: 10px solid black;
+    margin-left: 400px;
+}
