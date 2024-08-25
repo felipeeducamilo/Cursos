@@ -6,16 +6,54 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Merriweather", serif;
+}
+
 /*======================= HEADER ================================*/
 
-header {
-    background-color: #405D72;
-   text-decoration: underline;
+.top-container {
+    background-color: #164863;
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
 }
+
+.celebro-tec-cima {
+    position: absolute;
+    right: 20%;
+}
+
+.celebro-tec-baixo {
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+}
+
+h1 {
+    margin: auto;
+    font-family: "Sacramento", cursive;
+    color: #9BBEC8;
+    font-size: 4.5em;
+}
+
+p {
+    color:#427D9D;
+}
+
+h2, h3 {
+    font-family: "Montserrat", sans-serif;
+    color: #164863;
+}
+
+/*======================= MAIN ================================*/
 
 main {
    
 }
+
+
+/*======================= FOOTER ================================*/
 
 footer {
    
