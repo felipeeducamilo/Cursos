@@ -67,7 +67,7 @@ hr{
 
 #midle-profile-img {
     padding: 20px;
-    width: 200px;
+    width: 30%;
 }
 
 .midle-skill {
@@ -78,8 +78,13 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     margin: auto;
+}
+
+#midle-skill-img-fazer {
+    padding: 20px;
+    width: 40%;
 }
 
 .midle-skill-now {
@@ -97,6 +102,10 @@ hr{
     gap: 20px;
 }
 
+#midle-skill-img-fazer2 {
+    padding: 20px;
+    width: 30%;
+}
 
 .figcaption-skill-now > h2 {
     margin-bottom: 25px;
