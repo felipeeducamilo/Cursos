@@ -78,26 +78,48 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
 .midle-skill-now {
    text-align: center;
+   padding-bottom: 50px;
 }
 
 .figure-skill-now {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     margin: auto;
+    flex-direction: row-reverse;
+    gap: 20px;
 }
 
 
-.figcaption-skill-now {
-
+.figcaption-skill-now > h2 {
+    margin-bottom: 25px;
 }
 
 
 /*======================= FOOTER ================================*/
+
+.botton-container {
+   text-align: center;
+   padding: 20px;
+   
+}
+
+.botton-container > a{
+    margin: 10px 5px;
+    text-decoration: none;
+}
+
+.botton-container > img {
+    paddin: 5px;
+}
+
+.botton-container > p {
+    margin: 10px;
+}
