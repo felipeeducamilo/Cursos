@@ -10,6 +10,21 @@ body {
     font-family: "Merriweather", serif;
 }
 
+p {
+    color:#427D9D;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+h2, h3 {
+    font-family: "Montserrat", sans-serif;
+    color: #164863;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 10px 0px;
+   
+}
+
 /*======================= HEADER ================================*/
 #underline {
     text-decoration: underline;
@@ -40,66 +55,49 @@ h1 {
     line-height: 2;
 }
 
-p {
-    color:#427D9D;
-    text-align: center;
-    padding: 10px 0px;
-}
-
-h2, h3 {
-    font-family: "Montserrat", sans-serif;
-    color: #164863;
-    font-size: 2.5rem;
-    text-align: center;
-    padding-top: 10px 0px;
-   
-}
 
 hr{
-    padding: 10px;
+    margin: 30px 0px;
 }
 
 /*======================= MAIN ================================*/
-.midle-container {
-    width: 80%;
-    margin: auto;
-    display: block; 
-    
-}
-    
-
 .midle-profile {
- align-items: center; 
-   
-}
-
-.midle-figcap-profile {
     text-align: center;
 }
 
-
 #midle-profile-img {
-    width: 250px;
-    height: 250px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    padding-top: 10px;
-}
-   
-  
-.midle-skills {
-   
-   
+    padding: 20px;
+    width: 200px;
 }
 
-.skill-now {
-    
-   
+.midle-skill {
+    text-align: center;
 }
-#midle-skill-img {
-    margin-left: 50%;
-    transform: translateX(-50%);
-    
+
+.midle-skill-figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
 }
+
+.midle-skill-now {
+   text-align: center;
+}
+
+.figure-skill-now {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+
+.figcaption-skill-now {
+
+}
+
 
 /*======================= FOOTER ================================*/
