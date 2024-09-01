@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexble Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: cadetblue;
+            border: 1px solid black;
+            text-align: center;
+           
+        }
+
+        div#cxA {
+           /* flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 200px;
+            Sugestão W3 utilizar o felx, que é shorthand dessas 3 propriedades */
+            flex: 1 1 200px;
+        }
+
+        div#cxB {
+          /*   flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 200px;
+             Sugestão W3 utilizar o felx, que é shorthand dessas 3 propriedades 
+             grow shrubk basis*/
+             flex: 1 0 200pc;
+        }
+
+        div#cxC {
+           /*  flex-grow: 0;
+            flex-shrink: 1; 
+            flex-basis: 200px;
+             Sugestão W3 utilizar o felx, que é shorthand dessas 3 propriedades */
+             flex: 0 1 200pc;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+</body>
+</html>
