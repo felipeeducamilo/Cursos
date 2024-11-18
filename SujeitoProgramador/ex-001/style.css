@@ -77,6 +77,10 @@ body {
     transition: transform 0.8s;
 }
 
+.hide {
+    display: none;
+}
+
 .result:hover {
     transform: scale(1.1);
 }
@@ -116,4 +120,31 @@ body {
 .info-img {
     width: 66px;
     height: 66px;
+}
+
+.sobre {
+    max-width: 620px;
+    background-color: #242424;
+    padding: 24px 14px;
+    border: 1px solid #696969;
+    border-radius: 4px;
+    color: white;
+    line-height: 250%;
+}
+
+.button-calcular {
+    width: 70%;
+    height: 48px;
+    background-color: #119eca;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-decoration: none;
 }
