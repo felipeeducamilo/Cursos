@@ -11,10 +11,16 @@
     <form>
 
         <label for="pnome">Primeiro Nome</label>
-        <input type="text" name="pnome" id="pnome" placeholder="Primeiro Nome"> <br> <br>
+        <input type="text" name="pnome" id="pnome" placeholder="Primeiro Nome" required> <br> <br>
 
         <label for="unome">Último Nome </label>
-        <input type="text" id="unome" name="unome" placeholder="ùltimo Nome"> <br> <br>
+        <input type="text" id="unome" name="unome" placeholder="ùltimo Nome" required> <br> <br>
+
+        <label for="email">Seu e-mail</label>
+        <input type="email" id="email" name="email"> <br> <br>
+
+        <label for="nascimento">Data de nascimento</label>
+        <input type="date" name="nascimento" id="nascimento"> <br><br>
 
         <label"> <strong>Qual o seu nível de conhecimento?</strong></label> <br>
         <label>
@@ -32,13 +38,28 @@
         <label for="esolaridade">
             <strong>Qual a sua esolariedade?</strong>
         </label>
-        <select id="esolaridade">
+        <select id="esolaridade" required>
             <option selected disabled value="" >Selecione</option>
             <option>Fundamental</option>
             <option>Médio</option>
             <option>Superior</option>
             <option>Pós Graduado</option>
         </select> <br><br>
+
+        <label"> <strong>Selecione a tecnologoia que tem conhecimentos</strong</label> <br><br>
+
+            <input type="checkbox" name="1tecnologia" id="1tecnologia" value="HTML">
+            <label for="1tecnologia">HTML</label>
+
+            <input type="checkbox" name="2tecnologia" id="2tecnologia" value="CSS">
+            <label for="2tecnologia">CSS</label>
+
+            <input type="checkbox" name="3tecnologia" id="3tecnologia">
+            <label for="3tecnologia">JavaScript</label> 
+            
+            <input type="checkbox"  id="4tecnologia" value="PHP">
+            <label for="4tecnologia">PHP</label>
+            <br><br>
 
         <input type="submit" value="Cadastrar"> 
         <input type="reset" value="Limpar"> 
