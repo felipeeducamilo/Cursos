@@ -9,7 +9,6 @@ header {
     padding: 20px;
 }
     
-
 body {
     background-color: rgb(113, 191, 233);
     font: normal 16px Arial;
@@ -19,19 +18,19 @@ section {
     background-color: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    width: 400px;
     margin: auto auto;
     box-shadow: 2px 2px 3px rgba(188, 188, 188, 0.987);
 }
 
 section div {
    text-align: center;
-   padding: 20px;
+   padding: 5px;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     color: white;
     font-style: italic;
 }
