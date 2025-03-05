@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detran</title>
+  </head>
+  <body>
+    <label> Digite a velociade que está dirigindo</label>
+    <input type="number" name="txtveloc" id="txtveloc" />
+    <input type="submit" value="Verificar" onclick="calcular()" />
+    <div id="resultado"></div>
+
+    <script>
+       
+      function calcular() {
+        var txtvel = document.querySelector("input#txtveloc");
+        var resultado = document.querySelector("div#resultado");
+        var veloc = Number(txtvel.value);
+        resultado.innerHTML = `<p>Sua velocidade é ${veloc}km/h.</p>`;
+        if (veloc > 60) {
+          resultado.innerHTML += "<p>Você ultrapassou o limite de velociade, será MULTADO.</p>";
+        }
+        resultado.innerHTML += "Dirija sempre com segurança, use o cinto de segurança";
+      }
+    </script>
+  </body>
+</htm
