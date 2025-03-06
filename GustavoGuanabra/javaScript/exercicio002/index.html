@@ -8,13 +8,32 @@
 </head>
 <body>
     <header> 
-        <h1>Título</h1>    
+        <h1>Verificador de Idade</h1>    
     </header>
 
     <section>
-        <div>teste</div>
+        <div>
+            <p>
+                Ano de nascimento
+                <input type="number" name="txtnas" id="txtnas">
+            </p>
 
-        <div>teste</div>
+            <p>
+                Sexo
+                <input type="radio" name="radiosex" id="masculino" checked>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="radiosex" id="feminino">
+                <label for="feminino">Feminino</label>
+            </p>
+
+            <p>
+                <input type="submit" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+
+        <div id="image">
+            
+        </div>
     </section>
 
     <footer>
