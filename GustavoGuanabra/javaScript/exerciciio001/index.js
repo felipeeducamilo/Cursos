@@ -7,7 +7,14 @@ function carregar() {
   let correntHours = correntDate.getHours();
   let correntMinuts = correntDate.getMinutes();
   let correntSeconds = correntDate.getSeconds();
-    msg.innerHTML = `Agora são ${correntHours}:${correntMinuts}:${correntSeconds} `;
+  //let hours = correntHours < 10 ? "0" + correntHours : correntHours;
+  //let minuts = correntMinuts < 10 ? "0" + correntMinuts : correntMinuts;
+  //let seconds = correntSeconds < 10 ? "0"+ correntSeconds : correntSeconds;
+  msg.innerHTML = `Agora são ${
+    correntHours < 10 ? "0" + correntHours : correntHours
+  }:${correntMinuts < 10 ? "0" + correntMinuts : correntMinuts}:${
+    correntSeconds < 10 ? "0" + correntSeconds : correntSeconds
+  } `;
   if (correntHours > 0 && correntHours < 12) {
     //bom dia
     img.src = "image/manha250px.png";
