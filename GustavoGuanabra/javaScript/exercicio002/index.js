@@ -27,17 +27,13 @@ function verificar() {
       genero = "Feminino";
       document.body.style.backgroundColor = "pink";
       if (years <= 10) {
-        picture.setAttribute("src", "assets/menina.png");
-        
+        picture.setAttribute("src", "assets/menina.png");  
       } else if (years < 18) {
-        picture.setAttribute("src", "assets/garota.png");
-        
+        picture.setAttribute("src", "assets/garota.png");  
       } else if (years < 60) {
-        picture.setAttribute("src", "assets/mulher.png");
-        
+        picture.setAttribute("src", "assets/mulher.png");  
       } else if (years > 60) {
         picture.setAttribute("src", "assets/idosa.png");
-        
       }
     }
     image.innerHTML = `Detectamos uma pessoa do sexo ${genero} de ${years} anos`;
