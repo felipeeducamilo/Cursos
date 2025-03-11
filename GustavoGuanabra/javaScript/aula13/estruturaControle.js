@@ -9,6 +9,13 @@
 //   contador++;
 // } while (contador < 11);
 
-for (cont = 1; cont <= 10; cont++) {
+// for (cont = 1; cont <= 10; cont++) {
+//   console.log(`Contando ${cont}`);
+// }
+
+let inicio = 1;
+let fim = 10;
+let intervalo = 2;
+for (cont = inicio; cont <= fim; cont += intervalo) {
   console.log(`Contando ${cont}`);
 }
