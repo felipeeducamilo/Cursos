@@ -3,7 +3,7 @@ function calcular() {
   let fim = document.getElementById("txtfim").value;
   let intervalo = document.getElementById("txtintervalo").value;
   let resultado = document.getElementById("resultado");
-  resultado.innerHTML = "";
+  resultado.innerHTML = "Iniciando a contagem <br>" ;
   if (inicio == "" || fim == "" || intervalo == "") {
     alert("[ERRO] Digite todos os campos para ser calculado");
   } else {

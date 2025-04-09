@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modelo de exercício</title>
+</head>
+<body>
+    <header> 
+        <h1>Analisador de Números</h1>    
+    </header>
+
+    <section>
+        <div>
+            <p>Digite um número entre 1 e 100
+                <input type="number" name="txtnumero" id="txtnumero">
+                <input type="submit" value="adicionar" onclick="adicionarNumber()">
+            </p>
+            <select
+                name="selectNumber" 
+                id="selectNumber"
+                size="10">
+                <option 
+                    value="resultado"> Resultado 
+                </option>
+            </select>
+            <p>
+                <input 
+                    type="submit" value="Finalizar" onclick="finalizar()">
+            </p>
+        </div>
+
+        <div id="info">
+            
+            
+        </div>
+    </section>
+
+    <footer>
+       <p> &copy; Felipe Eduardo</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
