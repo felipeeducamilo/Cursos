@@ -1,4 +1,4 @@
-// script priorizando funçoes , chamadas de funcoes nas funçoes 
+// script priorizando funçoes , chamadas de funcoes nas funçoes
 
 let inputNumber = document.querySelector("#numero");
 let inputNumberList = document.querySelector("#numberList");
@@ -8,7 +8,7 @@ let result = document.querySelector("#resultado");
 let list = [];
 
 // function para verificar se algum input está vazio
-function inputEmpty(tochecked, result) {
+function inputEmpty(tochecked) {
   if (tochecked.value.trim() === "") {
     result.innerHTML = `⚠️ Digite um número`;
     return true;
@@ -16,9 +16,14 @@ function inputEmpty(tochecked, result) {
   return false;
 }
 
+function clearAndFocus(inputElement) {
+  inputElement.value = "";
+  inputElement.focus();
+}
+
 // função para verificar se um número e negativo, igual a zero ou positivo
 function resposta() {
-  if (inputEmpty(inputNumber, result)) {
+  if (inputEmpty(inputNumber)) {
     return;
   }
 
@@ -34,26 +39,24 @@ function resposta() {
   }
 
   // limpa o campo e coloca o focuo no input
-  inputNumber.value = "";
-  inputNumber.focus();
+  clearAndFocus(inputNumber);
 }
 
 // função para adicionar um nnúmero no vetor
 function adicionar() {
-  if (inputEmpty(inputNumberList, result)) {
+  if (inputEmpty(inputNumberList)) {
     return;
   }
   let inputValueNumber = Number(inputNumberList.value.trim());
   list.push(inputValueNumber);
 
-  result.innerHTML = `Sua lista de números é essa ${list.join(", ")}`;
-  inputNumberList.value = "";
-  inputNumberList.focus();
+  result.innerHTML = `📋 Sua lista de números é essa ${list.join(", ")}`;
+  clearAndFocus(inputNumberList);
 }
 
 // função para verificar se um número esta em uma lista
 function checkNumberList(i) {
-  if (inputEmpty(inputNumberToCheck, result)) {
+  if (inputEmpty(inputNumberToCheck)) {
     return;
   }
   inputValueNumber = Number(inputNumberToCheck.value.trim());
@@ -63,11 +66,8 @@ function checkNumberList(i) {
   } else {
     result.innerHTML = `❌ O números ${inputValueNumber} não está na lista`;
   }
-  inputNumberToCheck.value = "";
-  inputNumberToCheck.focus();
+  clearAndFocus(inputNumberToCheck);
 }
-
-
 
 const products = [
   { name: "Maça", price: 2.5 },
@@ -75,7 +75,6 @@ const products = [
   { name: "Guarana", price: 5 },
   { name: "Chocolate", price: 20 },
 ];
-
 
 //usa o filter para verificar se há elementos dentro da codição de valores menores que 20 e 8
 console.log(products.filter((product) => product.price === 20));
